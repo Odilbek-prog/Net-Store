@@ -1,0 +1,71 @@
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .discount__card {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .discount__img {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .slider-container {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .discount__card {
+    width: 200px; /* Adjusted width for small screens */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .discount__img {
+    width: 120px; /* Adjusted width for small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .slider-container {
+    width: 90%; /* Slightly reduced width */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .discount__card {
+    width: 230px; /* Adjusted width */
+    height: 300px; /* Default height */
+  }
+
+  .discount__img {
+    width: 140px; /* Adjusted width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .slider-container {
+    width: 80%; /* Adjusted width */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .discount__card {
+    width: 300px; /* Default width */
+    height: 300px;
+    color: black; /* Default height */
+  }
+
+  .discount__img {
+    width: 150px; /* Default width */
+    height: 200px; /* Default height */
+  }
+
+  .slider-container {
+    width: 1100px; /* Default width */
+  }
+}
+.fakeprice {
+  text-decoration: line-through;
+}

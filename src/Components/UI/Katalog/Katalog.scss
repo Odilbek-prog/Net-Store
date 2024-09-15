@@ -1,0 +1,219 @@
+/* Base Styles for .btn, .cam, .head, .phone, .katalog__title, and .katalog */
+.btn {
+  border: none;
+  border-left: 30px solid #fff;
+  height: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Default background color */
+}
+.katalog__wrapper {
+  margin-left: 150px;
+}
+.btn img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: aqua;
+}
+
+.cam {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.head {
+  margin-left: 15px !important;
+}
+
+.phone {
+  margin-left: 0 !important;
+}
+
+.katalog__title {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.katalog {
+  height: 300px;
+}
+
+/* Responsive Styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .btn {
+    height: 120px; /* Reduce button height */
+    border-left: 20px solid #fff; /* Adjust border size */
+    padding-top: 20px; /* Reduce padding */
+  }
+
+  .btn img {
+    width: 50px; /* Adjust image size */
+    margin-left: 5px; /* Reduce margin */
+    margin-bottom: 5px; /* Reduce margin */
+  }
+
+  .cam {
+    width: 50px; /* Adjust camera icon size */
+    margin-right: 5px; /* Reduce margin */
+  }
+
+  .head,
+  .phone {
+    margin-left: 5px !important; /* Reduce margin for smaller screens */
+  }
+
+  .katalog__title {
+    margin-left: 15px; /* Reduce margin */
+    margin-bottom: 15px; /* Reduce margin */
+  }
+
+  .katalog {
+    height: 250px; /* Adjust height */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .btn {
+    height: 130px; /* Slightly larger button height */
+    border-left: 25px solid #fff; /* Adjust border size */
+    padding-top: 25px; /* Adjust padding */
+  }
+
+  .btn img {
+    width: 55px; /* Adjust image size */
+    margin-left: 8px; /* Adjust margin */
+    margin-bottom: 8px; /* Adjust margin */
+  }
+
+  .cam {
+    width: 55px; /* Adjust camera icon size */
+    margin-right: 8px; /* Adjust margin */
+  }
+
+  .head,
+  .phone {
+    margin-left: 10px !important; /* Adjust margin */
+  }
+
+  .katalog__title {
+    margin-left: 20px; /* Adjust margin */
+    margin-bottom: 18px; /* Adjust margin */
+  }
+
+  .katalog {
+    height: 270px; /* Adjust height */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .btn {
+    height: 140px; /* Default button height */
+    border-left: 30px solid #fff; /* Restore default border size */
+    padding-top: 30px; /* Default padding */
+  }
+
+  .btn img {
+    width: 60px; /* Restore default image size */
+    margin-left: 10px; /* Restore default margin */
+    margin-bottom: 10px; /* Restore default margin */
+  }
+
+  .cam {
+    width: 60px; /* Restore default camera icon size */
+    margin-right: 10px; /* Restore default margin */
+  }
+
+  .head,
+  .phone {
+    margin-left: 15px !important; /* Restore default margin */
+  }
+
+  .katalog__title {
+    margin-left: 30px; /* Restore default margin */
+    margin-bottom: 20px; /* Restore default margin */
+  }
+
+  .katalog {
+    height: 300px; /* Restore default height */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .btn {
+    height: 150px; /* Default button height */
+    border-left: 30px solid #fff; /* Default border size */
+    padding-top: 30px; /* Default padding */
+  }
+
+  .btn img {
+    width: 60px; /* Default image size */
+    margin-left: 10px; /* Default margin */
+    margin-bottom: 10px; /* Default margin */
+  }
+
+  .cam {
+    width: 60px; /* Default camera icon size */
+    margin-right: 10px; /* Default margin */
+  }
+
+  .head,
+  .phone {
+    margin-left: 15px !important; /* Default margin */
+  }
+
+  .katalog__title {
+    margin-left: 30px; /* Default margin */
+    margin-bottom: 20px; /* Default margin */
+  }
+
+  .katalog {
+    height: 300px; /* Default height */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .btn {
+    height: 150px; /* Default button height */
+    border-left: 30px solid #fff; /* Default border size */
+    padding-top: 30px; /* Default padding */
+  }
+
+  .btn img {
+    width: 60px; /* Default image size */
+    margin-left: 10px; /* Default margin */
+    margin-bottom: 10px; /* Default margin */
+  }
+
+  .cam {
+    width: 60px; /* Default camera icon size */
+    margin-right: 10px; /* Default margin */
+  }
+
+  .head,
+  .phone {
+    margin-left: 15px !important; /* Default margin */
+  }
+
+  .katalog__title {
+    margin-left: 30px; /* Default margin */
+    margin-bottom: 20px; /* Default margin */
+  }
+
+  .katalog {
+    height: 300px; /* Default height */
+  }
+}

@@ -1,0 +1,220 @@
+/* Base Styles for introslidercon and intro */
+.introslidercon {
+  width: 1100px; /* Default width */
+  height: 500px; /* Default height */
+}
+
+.intro {
+  position: relative;
+  height: 400px; /* Default height */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around;
+  border-radius: 25px;
+  background: url(../../../img/bgImage.png) no-repeat center center;
+  background-size: cover; /* Ensure background image covers the container */
+}
+
+.intro__img {
+  height: 300px; /* Default image height */
+  position: relative;
+  z-index: 10;
+}
+
+.intro__text {
+  width: 300px; /* Default text width */
+}
+
+.intro__bg {
+  position: absolute;
+  border-radius: 25px;
+  left: 48.3%; /* Adjust based on design */
+  height: 400px; /* Default background height */
+  z-index: 0;
+}
+
+.intro__btn {
+  background: #00a3ff; /* Default button background */
+  border: none;
+  color: white;
+  width: 150px; /* Default button width */
+  padding: 10px 20px; /* Default button padding */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.intro__btn:hover {
+  background: #b1e1fc; /* Hover background color */
+}
+
+.intro__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Responsive Styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .introslidercon {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .intro {
+    flex-direction: column; /* Stack content vertically on small screens */
+    height: auto; /* Adjust height */
+    padding: 20px; /* Add padding */
+  }
+
+  .intro__img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro__text {
+    width: 100%; /* Make text block responsive */
+    text-align: center; /* Center align text */
+  }
+
+  .intro__bg {
+    left: 0; /* Adjust background positioning */
+    width: 100%; /* Full width for background */
+  }
+
+  .intro__btn {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Adjust padding */
+    text-align: center; /* Center align button text */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .introslidercon {
+    width: 90%; /* Slightly reduced width */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .intro {
+    height: auto; /* Adjust height */
+    padding: 30px; /* Add padding */
+  }
+
+  .intro__img {
+    width: 80%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro__text {
+    width: 80%; /* Adjust text block width */
+  }
+
+  .intro__bg {
+    left: 40%; /* Adjust background positioning */
+    width: 100%; /* Full width */
+  }
+
+  .intro__btn {
+    width: 120px; /* Adjust button width */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .introslidercon {
+    width: 80%; /* Adjust width */
+    height: auto; /* Adjust height */
+  }
+
+  .intro {
+    height: 400px; /* Default height */
+    padding: 40px; /* Add padding */
+  }
+
+  .intro__img {
+    width: 70%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro__text {
+    width: 70%; /* Adjust text block width */
+  }
+
+  .intro__bg {
+    left: 35%; /* Adjust background positioning */
+    width: 100%; /* Full width */
+  }
+
+  .intro__btn {
+    width: 130px; /* Adjust button width */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .introslidercon {
+    width: 70%; /* Adjust width */
+    height: 500px; /* Default height */
+  }
+
+  .intro {
+    height: 400px; /* Default height */
+    padding: 50px; /* Add padding */
+  }
+
+  .intro__img {
+    width: 60%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro__text {
+    width: 60%; /* Adjust text block width */
+  }
+
+  .intro__bg {
+    left: 30%; /* Adjust background positioning */
+    width: 100%; /* Full width */
+  }
+
+  .intro__btn {
+    width: 150px; /* Default button width */
+    padding: 10px 20px; /* Default padding */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .introslidercon {
+    width: 60%; /* Adjust width */
+    height: 500px; /* Default height */
+  }
+
+  .intro {
+    height: 400px; /* Default height */
+    padding: 60px; /* Add padding */
+  }
+
+  .intro__img {
+    width: 50%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro__text {
+    width: 50%; /* Adjust text block width */
+  }
+
+  .intro__bg {
+    left: 0; /* Adjust background positioning */
+    width: 100%; /* Full width */
+  }
+
+  .intro__btn {
+    width: 150px; /* Default button width */
+    padding: 12px 24px; /* Adjust padding */
+  }
+}

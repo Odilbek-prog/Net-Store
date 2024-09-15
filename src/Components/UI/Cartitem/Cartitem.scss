@@ -1,0 +1,74 @@
+/* Base Styles for .cart__item */
+.cart__item {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Added gap between image and content */
+}
+
+.cartitem__img {
+  width: 100px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .cart__item {
+    padding: 20px; /* Reduce padding for smaller screens */
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: flex-start;
+  }
+
+  .cartitem__img {
+    width: 80px; /* Adjust image size for smaller screens */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .cart__item {
+    padding: 30px; /* Adjust padding */
+    flex-direction: row; /* Ensure horizontal layout */
+  }
+
+  .cartitem__img {
+    width: 90px; /* Slightly adjust image size */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cart__item {
+    padding: 40px; /* Adjust padding for medium screens */
+  }
+
+  .cartitem__img {
+    width: 100px; /* Keep image size consistent */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cart__item {
+    padding: 50px; /* Restore default padding */
+  }
+
+  .cartitem__img {
+    width: 100px; /* Keep image size consistent */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cart__item {
+    padding: 60px; /* Increase padding for larger screens */
+  }
+
+  .cartitem__img {
+    width: 110px; /* Slightly increase image size for larger screens */
+  }
+}

@@ -1,0 +1,82 @@
+/* Base Styles for .malumot, .malumot__free, .malumot__24ga7, and .malumot__cashback */
+.malumot {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.malumot__free,
+.malumot__24ga7,
+.malumot__cashback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive Styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .malumot {
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 20px; /* Reduce gap between items */
+    margin-top: 10px; /* Reduce top margin */
+    margin-bottom: 40px; /* Reduce bottom margin */
+  }
+
+  .malumot__free,
+  .malumot__24ga7,
+  .malumot__cashback {
+    gap: 5px; /* Reduce gap between items */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .malumot {
+    gap: 40px; /* Adjust gap for small screens */
+    margin-top: 15px; /* Adjust top margin */
+    margin-bottom: 60px; /* Adjust bottom margin */
+  }
+
+  .malumot__free,
+  .malumot__24ga7,
+  .malumot__cashback {
+    gap: 8px; /* Adjust gap between items */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .malumot {
+    gap: 60px; /* Adjust gap for tablets */
+    margin-top: 20px; /* Default top margin */
+    margin-bottom: 70px; /* Default bottom margin */
+  }
+
+  .malumot__free,
+  .malumot__24ga7,
+  .malumot__cashback {
+    gap: 10px; /* Default gap between items */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .malumot {
+    gap: 80px; /* Adjust gap for desktops */
+    margin-top: 20px; /* Default top margin */
+    margin-bottom: 80px; /* Default bottom margin */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .malumot {
+    gap: 100px; /* Default gap for large screens */
+    margin-top: 20px; /* Default top margin */
+    margin-bottom: 80px; /* Default bottom margin */
+  }
+}
