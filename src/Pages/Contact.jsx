@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import phone from "../img/icons-phone1.png";
 import mail from "../img/icons-mail.png";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -102,7 +102,6 @@ const Contact = () => {
               rows="10"
             ></textarea>
             <button className="contact__btn">Habar yuborish</button>
-            <ToastContainer />
           </form>
         </div>
       </div>
