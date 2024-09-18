@@ -12,6 +12,7 @@ const New = () => {
       gap={"50px"}
       width={"1100px"}
       marginBottom={"100px"}
+      className="yes"
     >
       <Typography variant="h4" fontWeight={700}>
         Yangi mahsulotlar

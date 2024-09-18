@@ -38,6 +38,9 @@
   .Newbg4 {
     background-size: contain; /* Adjust background size to fit smaller screens */
   }
+  .yes {
+    display: none !important;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -48,6 +51,9 @@
   .Newbg4 {
     background-size: cover; /* Restore default background size for larger small screens */
   }
+  .yes {
+    display: none !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -57,6 +63,9 @@
   .Newbg3,
   .Newbg4 {
     background-size: cover; /* Ensure images cover the container */
+  }
+  .yes {
+    display: none !important;
   }
 }
 

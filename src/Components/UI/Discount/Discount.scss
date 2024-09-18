@@ -1,17 +1,17 @@
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   .discount__card {
-    width: 100%; /* Full width on small screens */
+    width: 100px; /* Full width on small screens */
     height: auto; /* Adjust height automatically */
   }
 
   .discount__img {
-    width: 100%; /* Full width on small screens */
+    max-width: 100px !important; /* Full width on small screens */
     height: auto; /* Maintain aspect ratio */
   }
 
   .slider-container {
-    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Full width on small screens */
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   .slider-container {
-    width: 90%; /* Slightly reduced width */
+    max-width: 500px; /* Slightly reduced width */
   }
 }
 
@@ -45,7 +45,7 @@
   }
 
   .slider-container {
-    width: 80%; /* Adjusted width */
+    max-width: 500px; /* Adjusted width */
   }
 }
 

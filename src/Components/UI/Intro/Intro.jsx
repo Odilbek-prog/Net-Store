@@ -7,15 +7,39 @@ import laptop from "../../../img/rasm.png";
 import bg from "../../../img/bglaptop.png";
 
 const Intro = () => {
-  const settings = {
+  var settings = {
     dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
+    infinite: false,
     speed: 2000,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="slider-container introslidercon">

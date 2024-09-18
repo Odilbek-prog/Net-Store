@@ -8,7 +8,7 @@ const Topnav = () => {
       <div className="topnav__wrapper">
         <div className="topnav__location">
           <img src={LocationOnIcon} alt="" className="topnav__icon" />
-          <span className="topnav__text">Shahar:Toshkent</span>
+          <span className="topnav__text">Shahar: Toshkent</span>
         </div>
         <span className="topnav__title">
           Buyurtmalaringizni bepul yetkazib beramiz - atiga 1 kun ichida

@@ -29,25 +29,6 @@ const Footer = () => {
               Mahsulotlarni va to’lovlarni qaytarish siyosati
             </p>
           </div>
-          <div className="footer__about">
-            <h3 className="footer__title">Savol berish</h3>
-            <form className="footer__form">
-              <input
-                className="footer__name"
-                type="text"
-                placeholder="Ismingiz"
-              />
-              <input
-                className="footer__number"
-                type="number"
-                placeholder="Telefon raqam"
-              />
-              <textarea className="footer__que" placeholder="Savol berish..." />
-              <button className="footer__btn" type="submit">
-                Yuborish
-              </button>
-            </form>
-          </div>
         </div>
       </footer>
       <hr className="footer__hr" />

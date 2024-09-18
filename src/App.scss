@@ -91,18 +91,32 @@
   align-items: center;
   gap: 100px;
   margin-bottom: 150px;
+
   &__top {
     width: 80%;
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
   }
+
   &__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
+
   &__card {
     width: 250px;
     height: 230px;
@@ -114,37 +128,113 @@
     justify-content: center;
     transition: all 0.5s;
     gap: 10px;
+
     &__text {
       width: 160px;
       text-align: center;
     }
+
     &:hover {
       background-color: aqua;
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
   }
 }
+
+@media (max-width: 480px) {
+  .about {
+    gap: 50px;
+    margin-bottom: 100px;
+
+    &__top {
+      gap: 15px;
+    }
+
+    &__bottom {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  .about__top__right {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__top__right {
+    max-width: 400px;
+  }
+}
+@media (max-width: 968px) {
+  .about__top__right {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about__top__right {
+    max-width: 400px;
+  }
+}
+
 .contact {
   display: flex;
   justify-content: center;
   margin-bottom: 150px;
+
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+
   &__right {
     width: 800px;
     height: 450px;
     border: 1px solid;
     box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
     padding: 40px;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: auto;
+    }
   }
+
   &__left {
     width: 350px;
     height: 450px;
     padding: 40px;
-
     border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
     box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: auto;
+    }
+
     &__top,
     &__bottom {
       display: flex;
@@ -152,13 +242,7 @@
       gap: 10px;
     }
   }
-  &__wrapper {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-evenly;
-  }
+
   &__btn {
     width: 200px;
     height: 50px;
@@ -166,20 +250,26 @@
     border-radius: 10px;
     background-color: #00a3ff;
     color: white;
-
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
+
   &__form {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 }
+
 .top {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .input {
   width: 360px;
   height: 50px;
@@ -187,16 +277,26 @@
   padding: 13px;
   border-radius: 10px;
   background-color: #d9d9d980;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
+
 textarea {
   background-color: #d9d9d980;
   border: none;
   border-radius: 10px;
   padding: 13px;
 }
+
 .form__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
